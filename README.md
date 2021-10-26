@@ -3,7 +3,8 @@
 
 ## **App Description**
 ___
-       Our app is a social media app where users can create posts with a comment section. The user can then add, change, delete comments.
+
+Our app is a social media app where users can create posts with a comment section. The user can then add, change, delete comments.
 
 ___
 
