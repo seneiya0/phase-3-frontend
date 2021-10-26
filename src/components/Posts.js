@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import CommentInterface from '../CommentInterface'
 
 function Posts() {
 
@@ -15,7 +16,8 @@ function Posts() {
       <h4> {post.user_name} </h4>
       <img src={post.image} style={{width: '400px'}} alt=''></img>
       <p className='datetime'> {post.created_at} </p>
-      <p> {post.caption} </p>
+      <p className='caption'> {post.caption} </p>
+      <CommentInterface id={post.id}/>
     </div>
   )))
 

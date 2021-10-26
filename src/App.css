@@ -31,3 +31,32 @@ h4{
   margin-top: 0%;
   color: #6e6e6e;
 }
+
+.comment{
+  margin-top: 0%;
+  text-align: left;
+  padding-left: 9.5%;
+}
+
+.name{
+  margin-bottom: 0%;
+  text-align: left;
+  padding-left: 8%;
+}
+
+.comment-div{
+  background-color: #ececec4b;
+  border-bottom: solid;
+  border-top: solid;
+  border-width: 1px;
+  border-color: #c2c2c26e;
+  display: flex; 
+  flex-direction: column;
+  height: auto;
+}
+
+.caption{
+  border-bottom: solid;
+  border-width: 1px;
+  padding-bottom: 20px;
+}
