@@ -1,7 +1,7 @@
 import React from 'react'
 import Comment from './Comment'
 
-function CommentList({comments, postid}) {
+function CommentList({comments, id, deleteComment}) {
     return (
         <div>
             <h3> comments </h3>
@@ -9,6 +9,8 @@ function CommentList({comments, postid}) {
             name={comment.user_name}
             content={comment.comment}
             key={comment.id}
+            id={comment.id}
+            deleteComment={deleteComment}
             />)}
         </div>
     )
