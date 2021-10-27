@@ -12,8 +12,10 @@ function Comment({name, content, id, deleteComment}) {
         <div className="comment-div">
             <h5 className="name">{name}</h5>
             <p className="comment">{content}</p>
-            <button>Edit</button>
-            <button onClick={handleDelete}>Delete</button>
+            <div>
+                <button className="edit-button">Edit</button>
+                <button className="delete-button" onClick={handleDelete}>Delete</button>
+            </div>
         </div>
     )
 }

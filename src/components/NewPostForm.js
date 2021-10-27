@@ -31,30 +31,31 @@ function NewPostForm({addNewPost}){
 
   return (
     <div>
-      <h3>Create a new post:</h3>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
+      <h3 className="post-h">Create a new post:</h3>
+      <form className="post-form"onSubmit={handleSubmit}>
+        {/* <label htmlFor="name">Name:</label> */}
+        <input 
+          className="name-input"
           type="text"
-          placeholder="name"
+          placeholder="name:"
           value={user_name}
           onChange={(e) => setUser_Name(e.target.value)}
         />
-        <label htmlFor="image">Image:</label>
         <input
+          className="image-input"
           type="text"
-          placeholder="image url"
+          placeholder="image url:"
           value={image}
           onChange={(e) => setImage(e.target.value)}
         />
-        <label htmlFor="caption">Caption:</label>
           <input
+            className="caption-input"
             type="text"
-            placeholder="caption"
+            placeholder="caption:"
             value={caption}
             onChange={(e) => setCaption(e.target.value)}
           />
-        <button className="post-button" type="submit">Post</button>
+        <button disabled={!user_name || !caption} className="post-button" type="submit">Post</button>
       </form>
     </div>
   );
