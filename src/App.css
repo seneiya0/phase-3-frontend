@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   height: auto;
   margin:1%
 }
@@ -60,3 +60,23 @@ h4{
   border-width: 1px;
   padding-bottom: 20px;
 }
+
+.new-post-button{
+  margin-top: 2%;
+  margin-bottom: 1%;
+  padding: 10px;
+  border-radius: 16px;
+  border: hidden;
+  background-color: rgb(180, 213, 252);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 550;
+  transition: 300ms;
+}
+
+.new-post-button:hover{
+  transform: scale(110%);
+}
+
+

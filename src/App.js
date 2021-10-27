@@ -1,12 +1,12 @@
 import './App.css';
 import Posts from './components/Posts';
-import CommentInterface from './CommentInterface';
-
+import NewPostContainer from "./components/NewPostContainer"
 
 function App(){
 
   return (
     <div className="App">
+    <NewPostContainer />
     <Posts />
     </div>
 

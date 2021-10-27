@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import CommentInterface from '../CommentInterface'
 
+
 function Posts() {
 
   const [ postData, setPostData ] = useState([])
@@ -10,6 +11,7 @@ function Posts() {
     .then(r => r.json())
     .then(data => setPostData(data))
   }, [])
+
 
   const posts = (postData.map((post) => (
     <div key={post.id} className='post' >
@@ -22,8 +24,10 @@ function Posts() {
   )))
 
   return(
-    <div className="posts"> 
-      {posts}
+    <div>
+      <div className="posts"> 
+        {posts}
+      </div> 
     </div>
   )
 
