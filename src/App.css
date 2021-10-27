@@ -97,7 +97,7 @@ h4{
 }
 
 .name-input:focus::placeholder{
-  color: black;
+  color: transparent;
 }
 
 
@@ -114,7 +114,7 @@ h4{
 }
 
 .image-input:focus::placeholder{
-  color: black;
+  color: transparent;
 }
 .caption-input{
   border: solid;
@@ -128,7 +128,7 @@ h4{
 }
 
 .caption-input:focus::placeholder{
-  color: black;
+  color: transparent;
 }
 .post-button{
   margin-top: 1%;
