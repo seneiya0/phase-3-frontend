@@ -17,11 +17,12 @@ function Posts() {
     <div key={post.id} className='post' >
       <h4> {post.user_name} </h4>
       <img src={post.image} style={{width: '400px'}} alt=''></img>
-      <p className='datetime'> {post.created_at} </p>
       <p className='caption'> {post.caption} </p>
+      <p className='datetime'> {post.created_at.split("T")[0].split("-")[1]}/{post.created_at.split("T")[0].split("-")[2]}/{post.created_at.split("T")[0].split("-")[0]} </p>
       <CommentInterface id={post.id}/>
     </div>
   )))
+
 
   return(
     <div>
