@@ -2,6 +2,7 @@ import './App.css';
 import Posts from './components/Posts';
 import NewPostContainer from "./components/NewPostContainer"
 
+
 function App(){
 
   return (
