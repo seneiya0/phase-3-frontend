@@ -20,6 +20,11 @@
   margin: 1%;
 }
 
+.user-name{
+  text-align: left;
+  padding-left: 25px;
+}
+
 h4{
   text-align: left;
   padding-left: 100px;

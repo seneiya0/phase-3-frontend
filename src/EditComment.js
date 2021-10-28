@@ -6,7 +6,6 @@ function EditComment({comment, id, handleUpdatedComment}) {
 
     const handleEditComment = (e) => {
         e.preventDefault();
-
         fetch(`http://localhost:9292/comments/${id}`, {
             method: 'PATCH', 
             headers: {
@@ -18,6 +17,7 @@ function EditComment({comment, id, handleUpdatedComment}) {
         .then(newComment => handleUpdatedComment(newComment))
         
         window.location.reload();
+        
     }
 
     return (
