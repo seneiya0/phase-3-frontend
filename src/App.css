@@ -47,6 +47,11 @@ h4{
   padding-left: 8%;
 }
 
+.caption{
+  text-align: left;
+  padding-left: 17%;
+}
+
 .comment-div{
   background-color: #ececec4b;
   border-top: solid;

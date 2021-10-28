@@ -33,7 +33,6 @@ function NewPostForm({addNewPost}){
     <div>
       <h3 className="post-h">Create a new post:</h3>
       <form className="post-form"onSubmit={handleSubmit}>
-        {/* <label htmlFor="name">Name:</label> */}
         <input 
           className="name-input"
           type="text"
@@ -50,7 +49,6 @@ function NewPostForm({addNewPost}){
         />
           <input
             className="caption-input"
-            type="text"
             placeholder="caption:"
             value={caption}
             onChange={(e) => setCaption(e.target.value)}
