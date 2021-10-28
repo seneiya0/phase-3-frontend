@@ -27,11 +27,11 @@ function Comment({name, comment, id, deleteComment, handleUpdatedComment}) {
             <button onClick={handleDelete}>Delete</button>
             </>
             )}
-            <p className="comment">{content}</p>
+            {/* <p className="comment">{comment}</p>
             <div>
                 <button className="edit-button">Edit</button>
                 <button className="delete-button" onClick={handleDelete}>Delete</button>
-            </div>
+            </div> */}
         </div>
     )
 }

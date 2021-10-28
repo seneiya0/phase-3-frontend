@@ -25,7 +25,8 @@ function NewComment({addNewComment, id}) {
         .then(comment => 
             addNewComment(comment)
         )
-
+        
+        setNewComment("")
     }
     return (
         <div>
