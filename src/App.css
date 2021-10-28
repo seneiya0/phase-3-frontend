@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  background-color: lavender;
+}
+
 .posts {
   display: flex;
   justify-content: center;
@@ -48,7 +52,7 @@ h4{
 }
 
 .comment-div{
-  background-color: #ececec4b;
+  background-color: whitesmoke;
   border-top: solid;
   border-width: 1px;
   border-color: #c2c2c26e;
@@ -156,10 +160,12 @@ h4{
   position: relative;
   width: 4%;
   left: 550px;
-  bottom: 20px;
+  bottom: 30px;
   padding: 0;
   border: none;
   background: none;
+  font-size:20px;
+  transform: scale(1, 1);
 }
 
 .delete {
@@ -172,9 +178,31 @@ h4{
 }
 
 .username {
-
+  padding: 10px;
+  margin:10px 0;
+  width: 200px;
+  box-shadow:0 0 15px 4px rgba(201, 192, 192, 0.747);
+  border-color: antiquewhite;
+  border-radius:10px;
 }
 
-.comment {
+.addComment {
+  padding: 10px;
+  margin:10px 0;
+  width: 200px;
+  box-shadow:0 0 15px 4px rgba(201, 192, 192, 0.747);
+  border-color: antiquewhite;
+  border-radius:10px;
+}
 
+.create {
+  margin-left: 5px;
+  border-radius:8px;
+  font-family:'Roboto',sans-serif;
+  font-size: 12px;
+  display:inline-block;
+  font-size: 15px;
+  background-color: rgb(180, 213, 252);
+  font-weight: 550;
+  transition: 300ms;
 }

@@ -45,10 +45,10 @@ function NewComment({addNewComment, id}) {
                     value={newComment}
                     placeholder="comment:"
                     onChange={(e) => setNewComment(e.target.value)}
-                    className="comment"
+                    className="addComment"
                 />
                 
-                <button>Create</button>
+                <button disabled={!userName || !newComment}className="create">Create</button>
             </form>
         </div>
     )

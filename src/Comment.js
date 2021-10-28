@@ -20,8 +20,8 @@ function Comment({name, comment, id, deleteComment, handleUpdatedComment}) {
                handleUpdatedComment={handleUpdatedComment}
             /> 
             ): (
-                <>
-            <h5 className="name">{name}</h5>
+            <>
+            <h4 className="name">{name}</h4><br/>
             <p className="comment">{comment}</p>
             <button onClick={() => setEditing(!editing)} className="edit">⋮</button>
             <button onClick={handleDelete} className="delete">X</button>
