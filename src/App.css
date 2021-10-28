@@ -156,3 +156,30 @@ h4{
   border-bottom-width: 1px;
   border-bottom-color: #a6a6a628;
 }
+
+.edit {
+  position: relative;
+  width: 4%;
+  left: 550px;
+  bottom: 20px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.delete {
+  position: relative;
+  bottom: 85px;
+  padding: 0;
+  border: none;
+  width: 4%;
+  background: none;
+}
+
+.username {
+
+}
+
+.comment {
+
+}

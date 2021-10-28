@@ -15,7 +15,7 @@ function Posts() {
 
   const posts = (postData.map((post) => (
     <div key={post.id} className='post' >
-      <h4> {post.user_name} </h4>
+      <h3> {post.user_name} </h3>
       <img src={post.image} style={{width: '400px'}} alt=''></img>
       <p className='caption'> {post.caption} </p>
       <p className='datetime'> {post.created_at.split("T")[0].split("-")[1]}/{post.created_at.split("T")[0].split("-")[2]}/{post.created_at.split("T")[0].split("-")[0]} </p>

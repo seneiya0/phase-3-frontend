@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import EditComment from './EditComment';
 
-function Comment({name, content, id, deleteComment}) {
+function Comment({name, comment, id, deleteComment, handleUpdatedComment}) {
+    const [editing, setEditing] = useState(false);
 
     const handleDelete = () => {
         deleteComment(id)
@@ -10,12 +12,26 @@ function Comment({name, content, id, deleteComment}) {
     }
     return (
         <div className="comment-div">
+            {editing ? (
+            <EditComment 
+               name={name}
+               content={comment}
+               id={id} 
+               handleUpdatedComment={handleUpdatedComment}
+            /> 
+            ): (
+                <>
             <h5 className="name">{name}</h5>
-            <p className="comment">{content}</p>
+            <p className="comment">{comment}</p>
+            <button onClick={() => setEditing(!editing)} className="edit">⋮</button>
+            <button onClick={handleDelete} className="delete">X</button>
+            </>
+            )}
+            {/* <p className="comment">{comment}</p>
             <div>
                 <button className="edit-button">Edit</button>
                 <button className="delete-button" onClick={handleDelete}>Delete</button>
-            </div>
+            </div> */}
         </div>
     )
 }

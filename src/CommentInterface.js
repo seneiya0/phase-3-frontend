@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react"
 import CommentList from './CommentList'
+import NewComment from './NewComment';
 
 function Comment({id}) {
 
@@ -18,12 +19,30 @@ function Comment({id}) {
         setComments(updatedComments);
       };
 
+    const addNewComment = (comment) => {
+        setComments([...comments, comment])
+
+    }
+
+    const handleUpdatedComment = (updatedComment) => {
+        const updatedComments = comments.map((comment) => {
+            if (comment.id === updatedComment.id) {
+                return updatedComment
+            } else {
+                return comment
+            }
+        })
+        setComments(updatedComments)
+    }
+
     return (
         <div>
         <CommentList
         comments={comments}
         deleteComment={deleteComment}
+        handleUpdatedComment={handleUpdatedComment}
         />
+        <NewComment addNewComment={addNewComment} id={id}/>
         </div>
     )
 }
