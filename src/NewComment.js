@@ -31,16 +31,21 @@ function NewComment({addNewComment, id}) {
     return (
         <div>
             <form onSubmit={handleSubmit}>
+                <p>Add Comment:</p>
                 <input
-                id="username"
-                value={userName}
-                onChange={(e) => setUserName(e.target.value)}
+                    id="username"
+                    value={userName}
+                    placeholder="username:"
+                    onChange={(e) => setUserName(e.target.value)}
+                    className="username"
 
                 />
                 <input
                     id="comment"
                     value={newComment}
+                    placeholder="comment:"
                     onChange={(e) => setNewComment(e.target.value)}
+                    className="comment"
                 />
                 
                 <button>Create</button>

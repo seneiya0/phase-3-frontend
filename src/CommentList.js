@@ -4,7 +4,7 @@ import Comment from './Comment'
 function CommentList({comments, id, deleteComment, handleUpdatedComment}) {
     return (
         <div>
-            <h3> comments </h3>
+            <h3> {comments.length} comments </h3>
             {comments.map(comment => <Comment
             name={comment.user_name}
             comment={comment.comment}

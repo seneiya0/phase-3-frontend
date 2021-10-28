@@ -23,8 +23,8 @@ function Comment({name, comment, id, deleteComment, handleUpdatedComment}) {
                 <>
             <h5 className="name">{name}</h5>
             <p className="comment">{comment}</p>
-            <button onClick={() => setEditing(!editing)}>Edit</button>
-            <button onClick={handleDelete}>Delete</button>
+            <button onClick={() => setEditing(!editing)} className="edit">⋮</button>
+            <button onClick={handleDelete} className="delete">X</button>
             </>
             )}
             {/* <p className="comment">{comment}</p>
