@@ -15,7 +15,7 @@ function Comment({name, comment, id, deleteComment, handleUpdatedComment}) {
             {editing ? (
             <EditComment 
                name={name}
-               content={comment}
+               comment={comment}
                id={id} 
                handleUpdatedComment={handleUpdatedComment}
             /> 
