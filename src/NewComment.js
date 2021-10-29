@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
+import { AiOutlineEnter } from 'react-icons/ai'
+import { MdAddComment } from 'react-icons/md'
 
 
 function NewComment({addNewComment, id}) {
     const [userName, setUserName] = useState("")
     const [newComment, setNewComment] = useState("");
+    const [commentButton, setCommentButton] = useState(false)
 
     const newCommentObj = {
         user_name: userName,
@@ -29,9 +32,11 @@ function NewComment({addNewComment, id}) {
         setNewComment("")
     }
     return (
+        
         <div>
-            <form onSubmit={handleSubmit}>
-                <p>Add Comment:</p>
+            <h1 onClick={() => setCommentButton(!commentButton)}> <MdAddComment /> </h1>
+             {commentButton ? (<form onSubmit={handleSubmit}>
+                
                 <input
                     id="username"
                     value={userName}
@@ -48,8 +53,8 @@ function NewComment({addNewComment, id}) {
                     className="addComment"
                 />
                 
-                <button disabled={!userName || !newComment}className="create">Create</button>
-            </form>
+                <button disabled={!userName || !newComment}className="create"> <AiOutlineEnter/> </button>
+            </form>) : null }
         </div>
     )
 }

@@ -16,6 +16,7 @@ function EditComment({comment, id, handleUpdatedComment}) {
         .then(r => r.json())
         .then(newComment => handleUpdatedComment(newComment))
         
+        
         window.location.reload();
         
     }

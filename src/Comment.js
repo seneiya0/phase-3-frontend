@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import EditComment from './EditComment';
+import { MdDelete } from 'react-icons/md'
+import { MdEdit } from 'react-icons/md'
 
 function Comment({name, comment, id, deleteComment, handleUpdatedComment}) {
     const [editing, setEditing] = useState(false);
@@ -21,10 +23,10 @@ function Comment({name, comment, id, deleteComment, handleUpdatedComment}) {
             /> 
             ): (
             <>
-            <h4 className="name">{name}</h4><br/>
+            <h3 className="name">{name}</h3><br/>
             <p className="comment">{comment}</p>
-            <button onClick={() => setEditing(!editing)} className="edit">⋮</button>
-            <button onClick={handleDelete} className="delete">X</button>
+            <button onClick={() => setEditing(!editing)} className="edit"><MdEdit/></button>
+            <button onClick={handleDelete} className="delete"><MdDelete/></button>
             </>
             )}
             {/* <p className="comment">{comment}</p>
